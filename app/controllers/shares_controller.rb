@@ -1,6 +1,6 @@
 class SharesController < ApplicationController
 
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_share, only: [:show, :edit, :update, :destroy]
 
   def index
     @shares = Share.all
@@ -13,7 +13,7 @@ class SharesController < ApplicationController
 
 
   def new
-    @share = Share.new(share_params)
+    @share = Share.new
   end
 
 
@@ -25,6 +25,17 @@ class SharesController < ApplicationController
 def create
   @share = Share.new(share_params)
   
+  
+    if @share.save
+     respond_to do |format|
+      format.html { redirect_to @share, notice: 'Share was successfully created.' }
+      format.json { render :show, status: :created, location: @share }
+    else
+      format.html { render :new }
+      format.json { render json: @share.errors, status: :unprocessable_entity }
+    end
+end
+
 end
 
 
@@ -45,8 +56,8 @@ end
   end
 
   def share_params
-    # params.require(:share).permit(:title, :video)
-    params.permit(:title, :video)
+    params.require(:share).permit(:title, :video)
+    # params.permit(:title, :video)
     
   end
 
