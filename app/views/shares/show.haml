@@ -1,0 +1,14 @@
+.title
+  Title:
+  = @share.title
+.video
+  -# Video:
+  -# = @share.video
+
+
+  = link_to @share.video_url.to_s do
+    = image_tag(@share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
+
+
+= link_to 'Edit', edit_share_path(@share)
+= link_to 'Home', shares_path
