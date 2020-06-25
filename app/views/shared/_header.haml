@@ -1,0 +1,23 @@
+.header
+  .inner
+    .icon
+      .button
+    .logo
+      %p
+        YuoTube 
+    .sarch
+      %input#video-search-field.video-form__input{:placeholder => "検索", :type => "text"}/
+      #user-search-result
+    .create
+      %p
+        作成
+        = link_to 'New video', new_share_path
+    .app-menu
+      %p
+        アプリ
+    .notice
+      %p
+        通知
+    .account
+      %P
+        アカウント
