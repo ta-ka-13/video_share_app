@@ -1,7 +1,9 @@
 class SharesController < ApplicationController
 
+  before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   def index
+    @shares = Share.all
   end
 
 
@@ -11,7 +13,7 @@ class SharesController < ApplicationController
 
 
   def new
-    
+    @share = Share.new(share_params)
   end
 
 
@@ -21,6 +23,7 @@ class SharesController < ApplicationController
 
 
 def create
+  @share = Share.new(share_params)
   
 end
 
@@ -34,7 +37,17 @@ def destroy
   
 end
 
+  private
 
+  def set_share
+    @share = Share.find(params[:id])
+    
+  end
 
+  def share_params
+    # params.require(:share).permit(:title, :video)
+    params.permit(:title, :video)
+    
+  end
 
 end

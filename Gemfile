@@ -68,3 +68,5 @@ gem 'carrierwave'
 gem 'streamio-ffmpeg'
 
 gem 'rb-readline'
+
+gem 'haml-rails'
