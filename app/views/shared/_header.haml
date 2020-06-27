@@ -1,23 +1,20 @@
 .header
   .inner
     .icon
-      .button
+      .style-scope
+        ■
+        
     .logo
-      %p
-        WeTube 
+      WeTube 
     .sarch
       %input#video-search-field.video-form__input{:placeholder => "検索", :type => "text"}/
-      #user-search-result
-    .create
-      %p
-        作成
-        = link_to 'New video', new_share_path
-    .app-menu
-      %p
-        アプリ
-    .notice
-      %p
-        通知
+      -# #user-search-result
     .account
-      %P
-        アカウント
+      アカウント
+    .notice
+      通知
+    .app-menu
+      アプリ
+
+    .create
+      = link_to '作成', new_share_path
