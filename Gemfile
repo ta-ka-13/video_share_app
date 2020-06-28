@@ -72,3 +72,4 @@ gem 'streamio-ffmpeg'
 gem 'rb-readline'
 
 gem 'haml-rails'
+gem 'devise' 
