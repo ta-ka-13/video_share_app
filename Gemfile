@@ -73,3 +73,4 @@ gem 'rb-readline'
 
 gem 'haml-rails'
 gem 'devise' 
+gem 'font-awesome-rails'
