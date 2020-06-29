@@ -2,8 +2,8 @@
   .inner
     .icon
       .style-scope
-        ■
-        
+        %i.fa.fa-cog
+          ■
     .logo
       WeTube 
     .sarch
@@ -13,7 +13,7 @@
     #user
       - if user_signed_in?
         .account
-          アカウント
+          = link_to 'ログアウト', destroy_user_session_path
         .notice
           通知
         .app-menu
@@ -22,4 +22,4 @@
           = link_to '作成', new_share_path
       - else
         .login
-          = link_to 'ログイン', new_user_session_url
+          = link_to 'ログイン', users_sign_up
