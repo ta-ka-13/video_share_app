@@ -1,0 +1,9 @@
+.hom
+  - @nickname
+
+  - @shares.each do |share|
+    = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
+    = share.title
+    = link_to 'Show', share
+    = link_to 'Edit', edit_share_path(share)
+    = link_to 'Destroy', share, method: :delete, data: { confirm: 'Are you sure?' }
