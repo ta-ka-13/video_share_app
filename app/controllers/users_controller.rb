@@ -7,7 +7,7 @@ end
 
 def show
   @nickname = current_user.nickname
-  # @shares = Share.where(user_id: current_user.id).page(params[:page]).per(5).order("created_at DESC")
+  @shares = Share.where(user_id: current_user.id)
   
 end
 
