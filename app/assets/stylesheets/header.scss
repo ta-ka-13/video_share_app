@@ -1,6 +1,7 @@
 .header{
   height: 56px;
   width: 100%;
+  
 }
   .inner{
     height: 55px;
@@ -16,6 +17,9 @@
       height: 20px;
       width: 70px;
       float: left;
+      .EDITLink{
+        text-decoration: none;
+        }
       }
 
     .sarch{
@@ -30,6 +34,7 @@
       height: 20px;
       width: 50px;
       float: right;
+      
       }
     .app-menu{
       height: 20px;

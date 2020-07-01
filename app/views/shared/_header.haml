@@ -5,7 +5,7 @@
         %i.fa.fa-cog
           ■
     .logo
-      WeTube 
+      = link_to 'WeTube', shares_path(@share),class: "EDITLink"
     .sarch
       %input#video-search-field.video-form__input{:placeholder => "検索", :type => "text"}/
     #user-search-result
@@ -13,7 +13,7 @@
     #user
       - if user_signed_in?
         .account
-          = link_to 'マイページ', destroy_user_session_path
+          = link_to 'マイページ',  edit_user_registration_path
         .notice
           通知
         .app-menu
