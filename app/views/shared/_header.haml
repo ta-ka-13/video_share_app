@@ -2,8 +2,7 @@
   .inner
     .icon
       .style-scope
-        %i.fa.fa-cog
-          ■
+        %i.fa.fa-bars
     .logo
       = link_to 'WeTube', shares_path(@share),class: "EDITLink"
     .sarch
@@ -13,13 +12,15 @@
     #user
       - if user_signed_in?
         .account
-          = link_to 'マイページ',  edit_user_registration_path
+          = link_to edit_user_registration_path do
+            %span.fa.fa-user-circle
         .notice
-          通知
+          %span.fa.fa-bell
         .app-menu
-          アプリ
+          %span.fa.fa-th
         .create
-          = link_to '作成', new_share_path
+          = link_to new_share_path do
+            %span.fa.fa-video-camera
       - else
         .login
           = link_to "ログイン", new_user_session_path
