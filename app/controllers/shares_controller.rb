@@ -23,9 +23,14 @@ class SharesController < ApplicationController
 
 
 def create
-  @share = Share.new(share_params)
+  # @share = Share.new(share_params)
+  # @share = Share.create(share_params)
   
-  
+
+  @share = Share.create(title: share_params[:title], video: share_params[:video], user_id: current_user.id)
+
+
+
     if @share.save
      respond_to do |format|
       format.html { redirect_to @share, notice: 'Share was successfully created.' }
@@ -56,8 +61,10 @@ end
   end
 
   def share_params
-    params.require(:share).permit(:title, :video)
+    # params.require(:share).permit(:title, :video, :user_id)
     # params.permit(:title, :video)
+
+    params.require(:share).permit(:title, :video, :user_id)
     
   end
 
