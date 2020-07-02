@@ -1,3 +1,4 @@
+= render 'shared/header'
 .show-main
   = current_user.nickname
 .video
@@ -7,3 +8,7 @@
     = link_to 'Show', share
     = link_to 'Edit', share_path(share)
     = link_to 'Destroy', share, method: :delete, data: { confirm: 'Are you sure?' }
+
+
+.home
+  = link_to 'HOME', shares_path(@share),class: "EDITLink"
