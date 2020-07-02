@@ -1,6 +1,8 @@
 = render 'shared/header'
 .show-main
   = current_user.nickname
+.list
+  動画投稿リスト
 .video
   - @shares.each do |share|
     = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")

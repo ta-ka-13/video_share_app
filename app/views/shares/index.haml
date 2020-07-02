@@ -5,7 +5,8 @@
       %p
         -# = share.title
         = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
-        = link_to '視聴する', share
+        = link_to share do
+          %span.fa.fa-play
       %p
         = share.title
       %p
