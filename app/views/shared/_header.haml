@@ -7,7 +7,9 @@
       = link_to 'WeTube', shares_path(@share),class: "EDITLink"
     .sarch
       %input#video-search-field.video-form__input{:placeholder => "検索", :type => "text"}/
+      
     #user-search-result
+      -# %input.submit.{"検索"}/
 
     #user
       - if user_signed_in?
@@ -23,4 +25,4 @@
             %span.fa.fa-video-camera
       - else
         .login
-          = link_to "ログイン", new_user_session_path
+          = link_to "ログイン", new_user_session_path,class: "EDITLink"
