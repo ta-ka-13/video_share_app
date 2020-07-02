@@ -46,10 +46,26 @@ end
 
 def update
   
+  respond_to do |format|
+    if @share.update(share_params) && @share.video.recreate_versions!
+      format.html { redirect_to @share, notice: 'Share was successfully updated.' }
+      format.json { render :show, status: :ok, location: @share }
+    else
+      format.html { render :edit }
+      format.json { render json: @share.errors, status: :unprocessable_entity }
+    end
+  end
+
 end
 
 
 def destroy
+
+  @share.destroy
+  respond_to do |format|
+    format.html { redirect_to shares_url, notice: 'Share was successfully destroyed.' }
+    format.json { head :no_content }
+  end
   
 end
 
