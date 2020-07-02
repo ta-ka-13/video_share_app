@@ -1,9 +1,14 @@
+= render 'shared/header'
 %h2
   = current_user.nickname
   -# Edit #{resource_name.to_s.humanize}
 = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
   = render "devise/shared/error_messages", resource: resource
+  = link_to 'チャンネル', @user
+  .main
+    アカウントを管理
   .field
+
     = f.label :email
     %br/
     = f.email_field :email, autofocus: true, autocomplete: "email"
@@ -12,33 +17,31 @@
       Currently waiting confirmation for: #{resource.unconfirmed_email}
   .field
     = f.label :password
-    %i (leave blank if you don't want to change it)
+    %i (変更したくない場合は空白のままにします)
     %br/
     = f.password_field :password, autocomplete: "new-password"
     - if @minimum_password_length
       %br/
       %em
         = @minimum_password_length
-        characters minimum
+        文字以上
   .field
-    = f.label :password_confirmation
+    = f.label :パスワードの確認
     %br/
     = f.password_field :password_confirmation, autocomplete: "new-password"
   .field
-    = f.label :current_password
-    %i (we need your current password to confirm your changes)
+    = f.label :現在のパスワード
+    %i (変更を確認するには現在のパスワードが必要です)
     %br/
     = f.password_field :current_password, autocomplete: "current-password"
   .actions
-    = f.submit "Update"
-    = link_to "ログアウト",destroy_user_session_path, method: :delete
-%h3 Cancel my account
+    = f.submit "更新"
+
 %p
-  Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+  アカウントを削除しますか? #{button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
 = link_to "HOME", :back
 
 -# = link_to "マイページ", show_user_path, method: :post
 
 -# = link_to 'マイページ', show_user_session_path
 
-<a href="/users/<%= current_user.id %>">マイページ</a>
