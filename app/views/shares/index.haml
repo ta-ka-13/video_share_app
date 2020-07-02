@@ -5,7 +5,11 @@
       %p
         -# = share.title
         = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
+        = link_to share do
+          %span.fa.fa-play
+      %p
         = share.title
-        = link_to '視聴する', share
-        -# = link_to 'Edit', edit_article_path(share)
-        -# = link_to 'Destroy', share, method: :delete, data: { confirm: 'Are you sure?' }
+      %p
+        = share.user.nickname
+
+
