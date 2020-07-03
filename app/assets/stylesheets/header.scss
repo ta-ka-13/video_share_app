@@ -1,11 +1,15 @@
 .header{
   height: 56px;
   width: 100%;
+  position: fixed;
+  background-color: white;
+  margin-top: -9px;
   
 }
   .inner{
     height: 55px;
     width: 100%;
+    position: fixed;
     }
     .icon{
       height: 20px;
@@ -31,7 +35,7 @@
       }
       .video-form__input{
         width: 600px;
-        height: 25px;
+        height: 20px;
       }
  
     .create{
