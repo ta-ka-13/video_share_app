@@ -1,6 +1,6 @@
-require 'carrierwave/storage/abstract'
-require 'carrierwave/storage/file'
-require 'carrierwave/storage/fog'
+# require 'carrierwave/storage/abstract'
+# require 'carrierwave/storage/file'
+# require 'carrierwave/storage/fog'
 
 CarrierWave.configure do |config|
   config.storage = :fog
@@ -13,5 +13,5 @@ CarrierWave.configure do |config|
   }
 
   config.fog_directory  = 'video-share-app-t'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/video-share-app-t'
 end

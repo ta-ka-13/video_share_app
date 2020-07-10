@@ -1,7 +1,7 @@
 = render 'shared/header'
 .wrapper
   .video
-    = @shares.each do |share|
+    - @shares.each do |share|
       %p
         -# = share.title
         = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
