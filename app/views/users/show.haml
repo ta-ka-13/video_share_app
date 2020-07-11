@@ -7,9 +7,9 @@
   - @shares.each do |share|
     = image_tag(share.video_url.to_s, id: "video")
     = share.title
-    = link_to 'Show', share
-    = link_to 'Edit', share_path(share)
-    = link_to 'Destroy', share, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }
+    = link_to '視聴', share
+    = link_to '編集', share_path(share)
+    = link_to '削除', share, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }
 
 
 .home

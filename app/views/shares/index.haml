@@ -5,12 +5,14 @@
       %p
         -# = share.title
         -# = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
-        = image_tag(share.video_url.to_s, id: "video")
+        -# = image_tag(share.video_url.to_s, id: "video")
         = link_to share do
-          %span.fa.fa-play
+          %span.fa.fa-film
       %p
+        title:
         = share.title
       %p
+        投稿者:
         = share.user.nickname
 
 

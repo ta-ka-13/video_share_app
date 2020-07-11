@@ -1,12 +1,13 @@
 -# = render 'shared/header'
 
 .video
+  
   Video:
-  = @share.video
+  -# = @share.video
 
   = link_to @share.video_url.to_s do
-    = image_tag(@share.video_url.to_s, id: "video")
-
+    -# = image_tag(@share.video_url.to_s, id: "video")
+    %span.fa.fa-play
 .title
   Title:
   = @share.title
