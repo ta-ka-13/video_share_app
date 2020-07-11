@@ -5,7 +5,7 @@
   動画投稿リスト
 .video
   - @shares.each do |share|
-    = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
+    = image_tag(share.video_url.to_s, id: "video")
     = share.title
     = link_to 'Show', share
     = link_to 'Edit', share_path(share)
