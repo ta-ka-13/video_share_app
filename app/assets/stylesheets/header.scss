@@ -1,15 +1,16 @@
 .header{
-  height: 56px;
+  height: 60px;
   width: 100%;
   position: fixed;
   background-color: white;
-  margin-top: -9px;
+  margin-top: -8px;
   
 }
   .inner{
-    height: 55px;
+    height: 60px;
     width: 100%;
     position: fixed;
+    // padding: 2px;
     }
     .icon{
       height: 20px;
@@ -25,6 +26,7 @@
       font-size: 20px;
       .EDITLink{
         text-decoration: none;
+        color: black;
         }
       }
 
@@ -32,7 +34,11 @@
       float: left;
       width: 50px;
       height: 30px;
+      
+      %input{
+        position: initial;
       }
+    }
       .video-form__input{
         width: 600px;
         height: 20px;
@@ -44,6 +50,9 @@
       float: right;
       font-size: 25px;
       }
+    .fa{
+      color:black;
+    }
     .app-menu{
       height: 20px;
       width: 50px;

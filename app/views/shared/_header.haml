@@ -6,25 +6,23 @@
     .logo
       = link_to 'WeTube', shares_path(@share),class: "EDITLink"
     .sarch
-      %input#video-search-field.video-form__input{:placeholder => "検索", :type => "text"}/
-      
-    -# #user-search-result
-      -# %input.submit.{"検索"}/
-    
-
+    = form_tag(shares_path,:method => 'get') do
+      =text_field_tag :search
+      = submit_tag 'search', :name => nil
+      -# %span.fa.fa-search
 
     #user
-      - if user_signed_in?
-        .account
-          = link_to edit_user_registration_path do
-            %span.fa.fa-user-circle
-        .notice
-          %span.fa.fa-bell
-        .app-menu
-          %span.fa.fa-th
-        .create
-          = link_to new_share_path do
-            %span.fa.fa-video-camera
-      - else
-        .login
-          = link_to "ログイン", new_user_session_path,class: "EDITLink"
+    - if user_signed_in?
+      .account
+        = link_to edit_user_registration_path do
+          %span.fa.fa-user-circle
+      .notice
+        %span.fa.fa-bell
+      .app-menu
+        %span.fa.fa-th
+      .create
+        = link_to new_share_path do
+          %span.fa.fa-video-camera
+    - else
+      .login
+        = link_to "ログイン", new_user_session_path,class: "EDITLink"

@@ -1,18 +1,19 @@
 = render 'shared/header'
 .wrapper
-  .video
-    - @shares.each do |share|
-      %p
-        -# = share.title
-        -# = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
-        -# = image_tag(share.video_url.to_s, id: "video")
-        = link_to share do
-          %span.fa.fa-film
-      %p
-        title:
-        = share.title
-      %p
-        投稿者:
-        = share.user.nickname
+  .video-inner
+    .video
+      - @shares.each do |share|
+        %p
+          -# = share.title
+          -# = image_tag(share.video_url(:screenshot).to_s, id: "video", :alt => "screenshot")
+          -# = image_tag(share.video_url.to_s, id: "video")
+          = link_to share do
+            %span.fa.fa-film
+        %p
+          タイトル:
+          = share.title
+        %p
+          投稿者:
+          = share.user.nickname
 
 

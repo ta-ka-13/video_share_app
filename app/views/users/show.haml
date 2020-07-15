@@ -1,16 +1,21 @@
 -# = render 'shared/header'
 .show-main
+  ユーザー:
   = current_user.nickname
-.list
-  動画投稿リスト
-.video
-  - @shares.each do |share|
-    = image_tag(share.video_url.to_s, id: "video")
-    = share.title
-    = link_to '視聴', share
-    = link_to '編集', share_path(share)
-    = link_to '削除', share, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }
+  .list
+    【動画投稿リスト】
+  .video
+    %p
+    - @shares.each do |share|
+      -# = image_tag(share.video_url.to_s, id: "video")
+      タイトル:
+      = share.title
+      %span.fa.fa-film
+      %p
+        = link_to '視聴', share, class: "EDITLink"
+        = link_to '編集', share_path(share), class: "EDITLink"
+        = link_to '削除', share, method: :delete, class: "EDITLink",data: { confirm: '本当に削除してよろしいですか？' }
 
 
-.home
-  = link_to 'HOME', shares_path(@share),class: "EDITLink"
+    .home
+      = link_to 'HOME', shares_path(@share), class: "EDITLink"
