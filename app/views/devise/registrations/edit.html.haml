@@ -1,12 +1,16 @@
-= render 'shared/header'
+-# = render 'shared/header'
+.wapper
+  .mypage
+    【マイページ】
 %h2
+  ユーザーネーム:
   = current_user.nickname
   -# Edit #{resource_name.to_s.humanize}
 = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
   = render "devise/shared/error_messages", resource: resource
-  = link_to 'チャンネル', @user
+  = link_to 'チャンネル', @user, class: "EDITLink"
   .main
-    アカウントを管理
+    【アカウント管理】
   .field
 
     = f.label :email
@@ -39,10 +43,14 @@
 
 %p
   アカウントを削除しますか? #{button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-= link_to "HOME", :back
+  -# = link_to "HOME", :back
 
 -# = link_to "マイページ", show_user_path, method: :post
 
 -# = link_to 'マイページ', show_user_session_path
 
-=link_to "ログアウト",destroy_user_session_url, method: :delete
+.home
+  = link_to 'HOME', shares_path(@share),class: "EDITLink"
+
+.logout
+= link_to "ログアウト",destroy_user_session_url, method: :delete, class: "EDITLink"
