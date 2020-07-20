@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+名前:videoshareapp
+概要:簡単に手持ちの動画をインターネット上でシェアができるアプリです。
+本番環境:heroku&aws・s3を使用。
+目的:herokuによるデプロイ
