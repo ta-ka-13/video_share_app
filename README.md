@@ -1,23 +1,23 @@
-# 名前
+# 名前:name
 ## video share app
 
-# 概要
+# 概要:overview
 #### 某動画投稿サイトのサービスをRubyOnRailsで再現。
 #### 簡単に手持ちの動画をインターネット上にシェアができるアプリ。
 #### 投稿した動画はメインページにタイトル、投稿者名、動画再生へのリンク先が表示される。
 #### iPhoneから撮影した動画もアップロード可能。
 
-# スクリーンショット
+# スクリーンショット:screenshot
 ## メインページ
 ![メインページ](https://github.com/ta-ka-13/video_share_app/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-07-20%2022.11.14.png)
-## 投稿画面
+## 投稿画面:post screen
 #### ※タイトル入力とアップロードしたい動画を選択してCreateShareボタンを押すだけで動画投稿可能。
 ![投稿メニュー](https://github.com/ta-ka-13/video_share_app/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-07-20%2023.08.57.png)
 
 # gif
 #### https://gyazo.com/df198af25462967ae9bc872ca2645ef2
 
-# 本番環境
+# 本番環境:production environment
 #### heroku&aws・s3を使用。(テスト用アカウントmail:i@i)
 
 # 目的
