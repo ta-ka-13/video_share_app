@@ -1,5 +1,5 @@
 # 名前
-## videoshareapp
+## video share app
 
 # 概要
 #### 某動画投稿サイトのサービスをRubyOnRailsで再現。
