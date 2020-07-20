@@ -1,6 +1,6 @@
 # README
 
-名前:videoshareapp
+#名前:videoshareapp
 
 概要:簡単に手持ちの動画をインターネット上でシェアができるアプリです。
 
