@@ -31,10 +31,12 @@
 #### 動画視聴はアカウントを作らないでも視聴でき、動画投稿する場合にだけアカウントを作るようにした。
 #### アップロードユーザーのみに投稿した動画を編集削除可能。
 #### gem carrierwaveを使って動画を投稿できるようにした。
+#### gem font-awesome-railsを導入し各種機能ボタンをアイコンにする事で直感的な操作ができるように工夫。
+#### ビューのデザインでは色を白黒に統一、各種リンクボタンはlink_toメソッドを加工しフラットなデザインへ変更。
 #### 必要な情報は全てネット検索、自分なりに理解し実装。
 
 # 使用技術:application technology
-#### Ruby on Rails5.2.2,haml,scss,carrierwave,heroku,AWS S3,GitHub
+#### Ruby on Rails5.2.2,haml,scss,carrierwave,font-awesome-rails,heroku,AWS S3,GitHub
 
 # 課題:issues in the future
 #### ローカル環境では個々の動画のサムネイル表示ができたが、本番環境では実装できなかったのが課題。
