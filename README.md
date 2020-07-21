@@ -20,26 +20,26 @@
 # 本番環境:production environment
 #### heroku&aws・s3を使用。(テスト用アカウントmail:i@i)
 
-# 目的
+# 目的:purpose
 #### herokuによるデプロイをする事。
 #### 某動画投稿サイトのような動画を共有できるアプリを作る事。
 #### プログラミングスクールで学んだ事以外の機能実装。
 
-# 工夫したポイント
+# 工夫したポイント:scheme
 #### 本番環境での動作必須。
 #### herokuとs3別々のサーバーを利用した頃。
 #### 動画視聴はアカウントを作らないでも視聴でき、動画投稿する場合にだけアカウントを作るようにした。
 #### アップロードユーザーのみに投稿した動画を編集削除可能。
 #### 必要な情報は全てネット検索、自分なりに理解し実装。
 
-# 使用技術
+# 使用技術:application technology
 #### RubyOnRails5.2.2,haml,scss,carrierwave,heroku,AWSs3,GitHub
 
-# 課題
+# 課題:issues in the future
 #### ローカル環境では個々の動画のサムネイル表示ができたが、本番環境では実装できなかったのが課題。
 
-# 実装予定の機能
+# 実装予定の機能:mplementation plan
 #### 動画サムネイル表示、検索機能、コメント機能、いいね機能、スマホ画面に対応、ビューのデザイン変更。
 
-# アプリケーションリンク先
+# アプリケーションリンク先:application link
 #### https://heroku-video-share-app-t.herokuapp.com/
