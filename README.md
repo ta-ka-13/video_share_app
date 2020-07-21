@@ -1,4 +1,4 @@
-# 名前:name
+# 名前:application name
 ## video share app
 
 # 概要:overview
