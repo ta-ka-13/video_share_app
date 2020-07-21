@@ -8,7 +8,7 @@
 #### iPhoneから撮影した動画もアップロード可能。
 
 # スクリーンショット:screenshot
-## メインページ
+## メインページ;main page
 ![メインページ](https://github.com/ta-ka-13/video_share_app/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-07-20%2022.11.14.png)
 ## 投稿画面:post screen
 #### ※タイトル入力とアップロードしたい動画を選択してCreateShareボタンを押すだけで動画投稿可能。
@@ -38,7 +38,7 @@
 # 課題:issues in the future
 #### ローカル環境では個々の動画のサムネイル表示ができたが、本番環境では実装できなかったのが課題。
 
-# 実装予定の機能:mplementation plan
+# 実装予定の機能:implementation plan
 #### 動画サムネイル表示、検索機能、コメント機能、いいね機能、スマホ画面に対応、ビューのデザイン変更。
 
 # アプリケーションリンク先:application link
