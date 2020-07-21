@@ -18,7 +18,7 @@
 #### https://gyazo.com/df198af25462967ae9bc872ca2645ef2
 
 # 本番環境:production environment
-#### heroku&aws・s3を使用。(テスト用アカウントmail:i@i)
+#### heroku&AWS・S3を使用。(テスト用アカウントmail:i@i、パスワード:123456)
 
 # 目的:purpose
 #### herokuによるデプロイをする事。
@@ -33,7 +33,7 @@
 #### 必要な情報は全てネット検索、自分なりに理解し実装。
 
 # 使用技術:application technology
-#### RubyOnRails5.2.2,haml,scss,carrierwave,heroku,AWSs3,GitHub
+#### RubyonRails5.2.2,haml,scss,carrierwave,heroku,AWS S3,GitHub
 
 # 課題:issues in the future
 #### ローカル環境では個々の動画のサムネイル表示ができたが、本番環境では実装できなかったのが課題。
