@@ -37,7 +37,7 @@
 #### 必要な情報は全てネット検索、自分なりに理解し実装。
 
 # 使用技術:application technology
-#### Ruby on Rails5.2.2,haml,scss,carrierwave,font-awesome-rails,heroku,AWS S3,GitHub
+#### Ruby on Rails5.2.2,Haml,Scss,CarrierWave,Font-Awesome-Rails,Heroku,AWS S3,GitHub
 
 # 課題:issues in the future
 #### ローカル環境では個々の動画のサムネイル表示ができたが、本番環境では実装できなかったのが課題。
