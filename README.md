@@ -19,7 +19,7 @@
 #### https://gyazo.com/df198af25462967ae9bc872ca2645ef2
 
 # 本番環境:production environment
-#### Heroku&AWS S3を使用。(テスト用アカウントmail:i@i、パスワード:123456)
+#### Heroku&AWS Amazon S3を使用。(テスト用アカウントmail:i@i、パスワード:123456)
 
 # 目的:purpose
 #### Herokuによるデプロイをする事。
@@ -28,7 +28,7 @@
 
 # 工夫したポイント:devised
 #### 本番環境での動作必須。
-#### HerokuとAWS S3別々のサーバーを利用した。
+#### HerokuとAWS Amazon S3別々のサーバーを利用した。
 #### 動画視聴はアカウントを作らないでも視聴でき、動画投稿する場合にだけアカウントを作るようにした。
 #### アップロードユーザーのみに投稿した動画を編集削除可能。
 #### gem CarrierWaveを使って動画を投稿できるようにした。
@@ -38,7 +38,7 @@
 #### 必要な情報は全てネット検索、自分なりに理解し実装。
 
 # 使用技術:application technology
-#### Ruby on Rails5.2.2,Haml,Scss,CarrierWave,Font-Awesome-Rails,Heroku,AWS S3,GitHub
+#### Ruby on Rails5.2.2,Haml,Scss,CarrierWave,Font-Awesome-Rails,Heroku,AWS Amazon S3,GitHub
 
 # 課題:issues in the future
 #### ローカル環境では個々の動画のサムネイル表示ができたが、本番環境では実装できなかったのが課題。
