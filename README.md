@@ -12,6 +12,8 @@
 # スクリーンショット:screenshot
 ## メインページ:main page
 ![メインページ](https://github.com/ta-ka-13/video_share_app/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-07-20%2022.11.14.png)
+## iPhone画面
+![iphone](https://github.com/ta-ka-13/video_share_app/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-07-29%2011.02.19.png)
 ## 投稿画面:post screen
 #### ※タイトル入力とアップロードしたい動画を選択してCreateShareボタンを押すだけで動画投稿可能。
 ![投稿メニュー](https://github.com/ta-ka-13/video_share_app/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-07-20%2023.08.57.png)
