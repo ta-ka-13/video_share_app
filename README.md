@@ -50,4 +50,4 @@
 #### 動画サムネイル表示、検索機能、コメント機能、いいね機能、通知機能、スマホ画面に対応、ビューのデザイン変更。
 
 # アプリケーションリンク先:application link
-#### https://heroku-video-share-app-t.herokuapp.com/
+
